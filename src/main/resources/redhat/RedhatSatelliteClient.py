@@ -35,7 +35,7 @@ class RedhatSatelliteClient(object):
     def ping(self):
         api_url = '/katello/api/v2/ping' 
         print "RedHat Satellite URL = %s " % (api_url)
-        response = self.httpRequest.get(servicemanager_api_url, contentType='application/json', headers = self.headers)
+        response = self.httpRequest.get(api_url, contentType='application/json', headers = self.headers)
 
         if response.getStatus() == SUCCES_RESULT_STATUS:
             data = json.loads(response.getResponse())
