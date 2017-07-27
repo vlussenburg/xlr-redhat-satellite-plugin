@@ -1,1 +1,1 @@
-# xlr-hpsm-plugin #
+# xlr-redhat-statellite-plugin #
